@@ -1,33 +1,34 @@
-const router = require("express");
+const {Router} = require("express");
 const adminRouter = Router();
+const { adminModel } = require("../db");
 
 
 
-userRouter.post("/signup", function(req, res)  {
+adminRouter.post("/signup", function(req, res)  {
     res.json({
         "message": "Signup successful"  
     });
  });
 
- userRouter.post("/signin", function(req, res)  {
+ adminRouter.post("/signin", function(req, res)  {
     res.json({
         "message": "Signup successful"  
     });
  });
 
- userRouter.post("/course", function(req, res)  {
+ adminRouter.post("/course", function(req, res)  {
     res.json({
         "message": "Signup successful"  
     });
  });
 
- userRouter.put("/course", function(req, res)  {
+ adminRouter.put("/course", function(req, res)  {
     res.json({
         "message": "Signup successful"  
     });
  });
 
- userRouter.get("/course", function(req, res)  {
+ adminRouter.get("/course", function(req, res)  {
     res.json({
         "message": "Signup successful"  
     });
